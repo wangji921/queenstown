@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Queenstown - Newsletter</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="The assignment for IWD 6420"> 
+    <meta name="keywords" content="Queenstown, Unitec, 6420, IWD assignment">
+    <meta name="author" content="Ji Wang (Student ID 1472041)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- CSS for lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <!-- header and navbar start-->
+    <div class="container">
+      <nav class="mynav">
+        <img src="images/logo.svg" alt="Queenstown" class="mynavimg">
+        <div class="mynavbtm">
+        <a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;&nbsp;HOME</a><a href="place.html"><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;&nbsp;THINGS TO DO</a><a href="accommodation.html"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;&nbsp;ACCOMODATION</a><a href="gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;&nbsp;GALLERY</a><a href="newsletter.html"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;NEWSLETTER</a>
+        </div>
+      </nav>
+    </div>
+    <!-- header and navbar over-->
+    
+    
+    <!-- Newsletter start-->
+    <div class="container jumbotron">
+      <h1>Sign up to the Newsletter</h1>
+    </div>
+    <div class="container mywhitebackground">
+      <div class="row myrow">
+        <div class="col-md-8">
+          <h3><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Sign up for the Tourism Queenstown email newsletter to receive our latest market insights, in-market activity and available resources.</h3><br>
+          <form name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="input-group">
+              <p>First Name: *</p>
+              <input type="text" class="form-control" placeholder="First Name" name="fname" onblur="validateName()" required><p><span class="error fname">&nbsp;</span></p>
+              <p>Last Name: *</p>
+              <input type="text" class="form-control" placeholder="Last Name" name="lname" onblur="validateSurname()" required><p><span class="error surname">&nbsp;</span></p>
+              <p>Email Address: *</p>
+              <input type="email" class="form-control" placeholder="email@example.com" name="email" onblur="validateEmail();" required><p><span class="error email">&nbsp;</span></p>
+              <p><label>
+                <input type="checkbox" required>&nbsp;&nbsp;I agree to the Terms of Service and Privacy Policy.
+              </label></p>
+              <button type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">Sign up</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="col-md-4">
+          <!-- <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+          <div id="error"></div>	 -->
+          <h3>Contect information</h3>
+          <p>Unitec Institute of Technology</p>
+          <p>139 Carrington Rd, Mount Albert</p>
+          <p>Auckland 1025</p>
+          <p>New Zealand</p>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJz01WoyBHDW0RD1aaPonXT6w&key=AIzaSyCiJBGTPDQjXbO3Kc2-f0koVzcx4M97J6E" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="myspace"></div>
+    </div>    
+    <!-- Newsletter over-->
+    
+    
+    <!-- footer start -->
+    <footer>
+      <div class="container myfooter">
+        <div class="myfooter_links">
+          <a class="myfooter_link" href="newsletter.html">Contact Us</a>
+          <a class="myfooter_link" href="#">Privacy Policy</a>
+          <a class="myfooter_link" href="#">Terms of Use</a>
+        </div>
+        <p>Coypright © 2016 Queenstown, New Zealand</p>
+      </div> 
+      <div class="container myauthor">Website Developed by Ji Wang</div>
+    </footer>
+    <!-- footer over -->
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Script for gallery (lightbox) -->
+    <script src="js/lightbox.js"></script>   
+    
+    
+    <!-- script for newsletter validation -->
+    <script src="js/newsletter.js"></script>
+
+
+  </body>
+</html>
